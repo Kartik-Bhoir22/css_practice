@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        position: relative;
+      }
+
+      p::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: darkgreen;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      p:hover::after {
+        transform: scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>this is header</header>
+
+    <h1>this is heading</h1>
+
+    <p>this is paragraph pe pe po po</p>
+
+    <p class="para">this is also paragraph but with class attribute</p>
+  </body>
+</html>
