@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Gelasio", serif;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(138deg, blue, purple);
+}
+
+.content {
+  background: #ccc;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 350px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  transition: background 0.3s ease-in-out;
+  background-color: rgb(255, 0, 234);
+  color: white;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: purple;
+}
